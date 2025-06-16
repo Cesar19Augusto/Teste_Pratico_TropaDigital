@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,4 @@
     font-family: 'Roboto', sans-serif;
 }
 
-$principal-color: #CC6237;
-$secondary-color: #2A4D8E;
-$tertiary-color: #657593;
-$secondary-color-50: rgba($secondary-color, 0.5);
+

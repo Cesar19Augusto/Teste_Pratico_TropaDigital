@@ -1,0 +1,237 @@
+@import 'variables';
+
+.container {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    width: 210px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: $principal-color;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 40px;
+}
+
+
+.imgIcon {
+    width: 15px;
+    height: 15px;
+    color: black;
+}
+
+.labelMenu {
+    font-size: 9px;
+}
+
+.userInfo {
+    position: fixed;
+    bottom: 2rem;
+    margin-top: 40px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border: none;
+}
+
+.profilePhoto {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $principal-color;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.userLink {
+    display: block;
+    padding: 10px;
+    width: 180px;
+    height: 35px;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background: $principal-color;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.mainContent {
+    flex: 1;
+    padding: 30px;
+}
+
+.mainContentHeader {
+    margin-bottom: 20px;
+}
+
+.mainContentTitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mainContentSubtitle {
+    color: $principal-color;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.link {
+    display: block;
+    padding: 10px;
+    width: 180px;
+    height: 35px;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+        background: $principal-color;
+        color: white;
+    }
+}
+
+.active {
+    background: $principal-color;
+    color: white;
+}
+
+.eventControls {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.eventInput {
+    padding: 8px;
+    width: 200px;
+    color: rgba(#000000, 0.3);
+    background: url('/assets/icons/icon-lupa.svg') no-repeat 10px center;
+    background-size: 16px;
+    padding-left: 36px;
+    border: none;
+}
+
+.eventTable {
+    width: 100%;
+    border-collapse: collapse;
+    color: #657593;
+}
+
+.titleEventTable {
+    color: rgba($principal-color, 0.5);
+}
+
+.cell {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.status {
+    color: #657593;
+}
+
+.statusAtivo {
+    color: #4DEF00;
+}
+
+.subMenu {
+    color: $principal-color;
+    font-size: 25px;
+}
+
+.pagination {
+    margin-top: 29px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+
+.pageBtn {
+    padding: 6px 12px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        background: $principal-color;
+        color: white;
+        border-radius: 33px;
+    }
+}
+
+.a {
+    display: block;
+    padding: 10px;
+    width: 180px;
+    height: 35px;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background: $principal-color;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.btn {
+    width: 124px;
+    height: 36px;
+    padding: 10px 15px;
+    border: none;
+    background: $principal-color;
+    color: white;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+.btn2 {
+        padding: 6px 12px;
+        border: none;
+        background: white;
+        color: black;
+        cursor: pointer;
+
+        &:hover {
+            background: $principal-color;
+            color: white;
+            border-radius: 33px;
+        }
+}

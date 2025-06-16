@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from 'next/navigation';
-import '../styles/login.scss';
+import styles from '../styles/login.module.scss';
 
 const Login = () => {
-  const [email, setEmail] = useState<string>("")
-  const [senha, setSenha] = useState<string>("")
+  const [email, setEmail] = useState<string>("kaiquesteck@teste.com")
+  const [senha, setSenha] = useState<string>("12345")
   const [error, setError] = useState<string>("")
 
   const dadosLogin = {
@@ -31,38 +31,41 @@ const Login = () => {
   };
 
   return (
-    <div id="app">
-      <main>
-        <div className="login-container">
-          <div className="titulo">
-            <img className="img-logo" src="/assets/icons/logo.svg" alt="Logo" />
-            <h1>Bem-vindo de volta</h1>
-            <h2>Entre com sua conta para acessar o painel.</h2>
+    <div className={styles.container}>
+      <div id={styles.app}>
+        <main className={styles["main-content"]}>
+          <div className={styles["login-container"]}>
+            <div className={styles["title-box"]}>
+              <img className={styles["img-logo"]} src="/assets/icons/logo.svg" alt="Logo" />
+              <h1 className={styles["title"]}>Bem-vindo de volta</h1>
+              <h2 className={styles["subtitle"]}>Entre com sua conta para acessar o painel.</h2>
+            </div>
+
+            <form onSubmit={handleSubmit}>
+              <div className={styles["input-wrapper"]}>
+                <label htmlFor="email" className={styles["label-email"]}>E-mail</label>
+                <input type="text" name="email" placeholder="seunome@seuservidor.com" value={email} onChange={(e => setEmail(e.target.value))} />
+              </div>
+
+              <div className={styles["input-wrapper"]}>
+                <label htmlFor="password" className={styles["label-password"]}>Senha</label>
+                <input type="password" name="password" placeholder="Digite aqui" value={senha} onChange={(e => setSenha(e.target.value))} />
+                <img src="/visualizar.svg" alt="olho" className={styles["input-icon"]} />
+              </div>
+
+              <button className={styles.btn} type="submit">Enviar</button>
+            </form>
           </div>
+        </main>
 
-          <form onSubmit={handleSubmit}>
-            <div className="input-wrapper">
-              <label htmlFor="email" className="label-email">E-mail</label>
-              <input type="text" name="email" placeholder="seunome@seuservidor.com" value={email} onChange={(e => setEmail(e.target.value))} />
-            </div>
-
-            <div className="input-wrapper">
-              <label htmlFor="password" className="label-password">Senha</label>
-              <input type="password" name="password" placeholder="Digite aqui" value={senha} onChange={(e => setSenha(e.target.value))} />
-              <img src="/visualizar.svg" alt="olho" className="input-icon" />
-            </div>
-
-            <button className="btn" type="submit">Enviar</button>
-          </form>
-        </div>
-      </main>
-
-      <aside>
-        <div className="aside-container">
-          <img src="/assets/icons/banner.svg" alt="banner" />
-        </div>
-      </aside>
+        <aside className={styles["aside-content"]}>
+          <div>
+            <img src="/assets/icons/banner.svg" alt="banner" />
+          </div>
+        </aside>
+      </div>
     </div>
+
   );
 };
 
