@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-     <a href="[PROJECT__URL](https://teste-pratico-tropa-digital.vercel.app/login)">📱 Visit this Project</a>
+     <a href="https://teste-pratico-tropa-digital.vercel.app/login">📱 Visit this Project</a>
 </p>
 
 <!--
