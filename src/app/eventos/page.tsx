@@ -15,7 +15,7 @@ const Eventos = () => {
                 <nav className={Style.menu}>
                     <label className={Style.labelMenu}>Menu</label>
 
-                    <Link href="./eventos" className={`${Style.link} ${pathname === '/eventos' ? Style.active : ''}`}>g
+                    <Link href="./eventos" className={`${Style.link} ${pathname === '/eventos' ? Style.active : ''}`}>
                         <img className={Style.imgIcon} src="./assets/icons/icon-eventos.svg" alt="Logo" />
                         Eventos
                     </Link>
@@ -49,8 +49,8 @@ const Eventos = () => {
 
             <main className={Style.mainContent}>
                 <header>
-                    <h2>Bem-vindo de volta, <strong>Kaique Steck</strong></h2>
-                    <h3>Todos eventos</h3>
+                    <h2 className={Style.h2}>Bem-vindo de volta, <strong>Kaique Steck</strong></h2>
+                    <h3 className={Style.h3}>Todos eventos</h3>
                 </header>
 
                 <div className={Style.events}>

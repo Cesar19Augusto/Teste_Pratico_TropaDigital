@@ -82,6 +82,17 @@
     padding: 30px;
 }
 
+.h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.h3 {
+    color: $principal-color;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
 .mainContentHeader {
     margin-bottom: 20px;
 }
@@ -223,15 +234,15 @@
 }
 
 .btn2 {
-        padding: 6px 12px;
-        border: none;
-        background: white;
-        color: black;
-        cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
 
-        &:hover {
-            background: $principal-color;
-            color: white;
-            border-radius: 33px;
-        }
+    &:hover {
+        background: $principal-color;
+        color: white;
+        border-radius: 33px;
+    }
 }

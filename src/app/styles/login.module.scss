@@ -43,7 +43,26 @@
     }
 }
 
-.input-wrapper {
+.input-wrapper1 {
+    position: relative;
+    width: 100%;
+    padding-top: 45px;
+
+    input {
+        border: none;
+        display: block;
+        width: 299px;
+        height: 60px;
+        box-sizing: border-box;
+        padding-left: 1.5rem;
+
+        &::placeholder {
+            color: $tertiary-color;
+        }
+    }
+}
+
+.input-wrapper2 {
     position: relative;
     width: 100%;
 

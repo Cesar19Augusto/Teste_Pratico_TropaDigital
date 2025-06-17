@@ -42,12 +42,12 @@ const Login = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles["input-wrapper1"]}>
                 <label htmlFor="email" className={styles["label-email"]}>E-mail</label>
                 <input type="text" name="email" placeholder="seunome@seuservidor.com" value={email} onChange={(e => setEmail(e.target.value))} />
               </div>
 
-              <div className={styles["input-wrapper"]}>
+              <div className={styles["input-wrapper2"]}>
                 <label htmlFor="password" className={styles["label-password"]}>Senha</label>
                 <input type="password" name="password" placeholder="Digite aqui" value={senha} onChange={(e => setSenha(e.target.value))} />
                 <img src="/visualizar.svg" alt="olho" className={styles["input-icon"]} />
