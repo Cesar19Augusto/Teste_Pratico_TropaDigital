@@ -25,8 +25,8 @@
 <h2 id="technologies">💻 Technologies</h2>
 
 <p>React</p>
-<p>TyperScript</p>
-<p>Next.js</p>
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)
 
 <h2 id="started">🚀 Getting started</h2>
 
